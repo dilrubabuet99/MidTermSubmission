@@ -28,35 +28,18 @@ public class UseMap {
 		for (Map.Entry<Integer,String> entry: mapHollywood.entrySet()){
 		System.out.println(entry.getKey() + " :" + entry.getValue());
 		}
-		/*HashMap<Integer, String> mapBollywood = new HashMap<>();
-		mapBollywood.put(1, "srk");
-		mapBollywood.put(2, "abbhn");
-		mapBollywood.put(3, "Sallu");
-		mapBollywood.put(1, "mdk");
-		mapBollywood.put(1, "rk");
-
-		LinkedHashMap<String,List<Integer,String>> allWoods = new LinkedHashMap<>();
-		allWoods.put("Popular in world" ,mapHollywood);
-		allWoods.put("Popular in india" ,mapBollywood);
-		for (Map.Entry<String, List<Integer>> entryNew: allWoods.entrySet()){
-			System.out.println(entryNew.getKey() + " :" + entryNew.getValue());
-		}
-		*/
 
 
 
-			/*ListIterator <String > itMap = map.ListIterator ();
-            while  (iterator.hasNext()){
-            System.out.println(iterator.next());
-        }//
+
+		Iterator itMap = mapHollywood.entrySet().iterator();
+            while  (itMap.hasNext()){
+				Map.Entry pair = (Map.Entry)itMap.next();
+				System.out.println(pair.getKey() + " = " + pair.getValue());
+        }
 
 			
-			System.out.println(itMap.next());
-			System.out.println(itMap.next());
-			System.out.println(itMap.next());
-			System.out.println(itMap.next());
 
-		*/
 
 	}
 }
