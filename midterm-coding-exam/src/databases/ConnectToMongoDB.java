@@ -40,7 +40,7 @@ public class ConnectToMongoDB {
         MongoCollection<Document> collection = mongoDatabase.getCollection("profile");
         BasicDBObject basicDBObject = new BasicDBObject();
         FindIterable<Document> iterable = collection.find(basicDBObject);
-          FindIterable<Document> iterable = collection.find();
+          //FindIterable<Document> iterable = collection.find();
         for(Document doc:iterable){
             String stName = (String)doc.get("stName");
             user.setStName(stName);
@@ -67,11 +67,14 @@ public class ConnectToMongoDB {
     }
 
     public static void main(String[] args){
-       insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
-        List<User> user = readUserProfileFromMongoDB();
+       //insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
+        //List<User> user = readUserProfileFromMongoDB();
+        /*
         for(User person:user){
 
             System.out.println(person.getStName()+ " "+ person.getStID());
         }
+
+         */
     }
 }
