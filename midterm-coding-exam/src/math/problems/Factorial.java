@@ -24,7 +24,7 @@ public class Factorial {
          *
          */
 
-        int n=5;
+        int n=1;
         System.out.println("Factorial of a number in iterative method is:  "+ iterativeFact(n));
         System.out.println("Factorial of a number in recursive method is:  "+ recFact(n));
     }

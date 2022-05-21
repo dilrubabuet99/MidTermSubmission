@@ -7,7 +7,7 @@ public class Fibonacci {
           0,1,1,2,3,5,8,13
          */
 
-        int n=5;
+        int n=40;
 
         int p=0;
         int c=1;
